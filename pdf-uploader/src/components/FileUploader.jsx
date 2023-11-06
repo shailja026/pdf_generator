@@ -44,7 +44,7 @@ function FileUploader() {
     formData.append("name", name);
     formData.append("file", selectedfile);
     console.log(formData);
-    fetch("http://localhost:7000/uploadPdf", {
+    fetch("https://vidyalaya-full-stack.vercel.app/uploadPdf", {
       method: "POST",
       body: formData,
     })
@@ -65,7 +65,7 @@ function FileUploader() {
   //  getting data from the server ----------------------------------------------------------------
 
   const fetchData = () => {
-    fetch("http://localhost:7000/getPdf", {
+    fetch("https://vidyalaya-full-stack.vercel.app/getPdf", {
       // mode: "no-cors",
       method: "GET"
     })
